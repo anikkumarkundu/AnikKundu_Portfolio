@@ -1,0 +1,659 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*.......HOME SECTION......*/
+
+.portfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+body{
+    background-color: #262525;
+    padding-top: 15vh;
+}
+
+.nav-bar .navlist{
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    /*z-index: 99999999;*/
+    background-color: #262525;
+}
+
+
+.nav-bar .navlist li{
+    list-style: none;
+    font-size: 1rem;
+
+}
+
+.nav-bar .navlist li a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+}
+
+.left-container{
+    background-color: #262525;
+   /* background-color: linear-gradient(to right,#1abc9c,#3498db);*/
+    width: 70%;
+    padding-left:3rem ;
+}
+.left-container , .right-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.right-container{
+    background: linear-gradient(-45deg,#3877FF,#262525 75%);
+    background-size: cover;
+    width: 30%;
+}
+
+.icons .fa-brands{
+    color: #bbb;
+    font-size: 1.7rem;
+}
+
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3cm;
+}
+
+
+.content{
+    margin-left: 8%;
+    margin-top: 16%;
+}
+
+.content h2{
+    color: #bbb;
+}
+.content h1{
+    font-size: 50px;
+    color: #5DB9EE;
+    margin-bottom: 20px;
+}
+
+
+span{
+    color: #5DB9EE;
+}
+.span1{
+    color: orange;
+}
+
+
+.content p{
+    color: whitesmoke;
+    line-height: 22px;
+    font-weight: bold;
+    max-width: 19rem;
+    line-height: 1.8rem;
+}
+
+.buttons button{
+    border: 0.1rem solid #5DB9EE;
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem ;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 2rem;
+    transition: 0.5s ease;
+}
+
+
+
+.content a{
+    background-color: #212121;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.buttons .button-1st{
+        background-color: #5DB9EE;
+        color: #262525;
+}
+
+.buttons .button-2nd{
+    background-color: transparent;
+    color: #5DB9EE;
+    margin-left: 2rem;
+}
+
+.buttons .button-1st:hover{
+        background-color: transparent;
+        color: #5DB9EE;
+}
+
+.buttons .button-2nd:hover{
+    background-color: #5DB9EE;
+    color: #262525;
+}
+
+.design .circle{
+        aspect-ratio: 1;
+        position: absolute;
+        border-radius: 50%;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%,-50%);
+        
+}
+
+.circle:nth-child(1){
+
+    background:linear-gradient(90DEG, transparent 50%,#262525 50%);
+    width: 26rem;
+    margin-top: 6rem;
+}
+.circle:nth-child(1) img{
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    margin-top: 1.3cm;
+    margin-left:1.3cm;
+}
+
+.circle:nth-child(2){
+    /*background-image: url(crop.jpg);*/
+    
+    background-repeat: no-repeat;
+    border: 0.3rem solid white;
+    width: 21rem;
+    margin-top: 6rem;
+    box-shadow:0 0 1rem #fff, 
+    inset 0 0 1rem #fff,
+    0 0 2rem #3877ff,
+    inset 0 0 2rem #3877FF,
+    0 0 4rem #3877FF,
+    inset 0 0 4rem #3877FF;
+}
+
+.navlist li a::after{
+    content: " ";
+    position: absolute;
+    background-color:rgb(255, 255, 0);
+    width: 100%;
+    height: 0.1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin:  bottom right;
+    transition: 0.5s;
+}
+
+.navlist li a:hover::after{
+    transform: scaleX(1);
+    transform-origin:  bottom left;
+}
+
+/*.............ABOUT...SECTION..............*/
+   
+        .about{
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+        }
+.left-side{
+    background: linear-gradient(50deg,#3877FF,#262525 75%);
+    background-size: cover;
+    width: 30%;
+}
+ .left-side , .right-side{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+ }
+.right-side{
+    background-color: #262525;
+    /* background-color: linear-gradient(to right,#1abc9c,#3498db);*/
+     width: 70%;
+     padding-left:3rem ;
+}
+
+.circles {
+        position: absolute;
+}
+
+.ring1{
+    background-color: red;
+    height: 27rem;
+    width: 27rem;
+    margin-top: 13rem;
+    margin-left: 13rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262525;
+}
+.ring2 img{
+    height: 314px;
+    width: 324px;
+    border-radius: 50%;
+    margin-top: cm;
+    margin-left:0.1cm;
+}
+.ring2{
+    /*background-image: url(crop.jpg);*/
+    height: 20rem;
+    border-radius: 50%;
+    border: 0.2rem solid white;
+    width: 21rem;
+    box-shadow:0 0 1rem #fff, 
+    inset 0 0 1rem #fff,
+    0 0 2rem #3877ff,
+    inset 0 0 2rem #3877FF,
+    0 0 4rem #3877FF,
+    inset 0 0 4rem #3877FF;
+}
+
+.right-side .details{
+    margin-top: 2cm;
+    /*background-color: #bbb;*/
+    height: 6cm;
+    width: 21cm;
+    margin-left: 5cm;
+}
+
+.right-side .details h1{
+    color: orange;
+}
+.right-side .details{
+    color: white;
+}
+
+.right-side .details .para{
+    padding-top: 0.5cm;
+        line-height: 0.6cm;
+}
+
+
+/*..........SKILLS SECTION..............*/
+
+.skills{
+    height: 100vh;
+    width: 100vw;
+    background-color: #262525 ;     /*#081b29*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.subtitle{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+    padding-top: 30px;
+    position: relative;
+    left: 200%;
+    
+}
+
+.my-skill .heading{
+    color: aqua;
+    letter-spacing: 0.1cm;
+}
+.subtitle span{
+    color: aqua;
+}
+.subtitle .my{
+    color: #5db9ee;
+
+}  
+.container2 .heading{
+    color: aqua;
+    letter-spacing: 0.1cm;
+}
+
+.heading{
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 50px;
+    
+}
+.bar{
+    font-size: 23px;
+}
+.technical-bar .bar{
+    margin: 20px 0;
+}
+.technical-bar .bar:first-child{
+    margin-top: 0;
+}
+.technical-bar .bar:last-child{
+    margin-bottom: 0;
+}
+.technical-bar .bar .info{
+    margin-bottom: 1px;
+}
+.technical-bar .bar .info span{
+    font-size: 17px;
+    font-weight: 400px;
+}
+.technical-bar .bar .progress-line{
+    position: relative;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: black;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.container2 .heading{
+
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.technical-bar .bar .progress-line span{
+    height: 100%;
+    background-color: aqua;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress-line.html span{
+    width: 70%;
+}
+.progress-line.css span{
+    width: 50%;
+}
+.progress-line.js span{
+    width: 50%;
+}
+.progress-line.c span{
+    width: 75%;
+}
+.progress-line.python span{
+    width: 60%;
+}
+
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showtext 0.5 1.5s linear forwards;
+    opacity: 0;
+}
+.progress-line.html span::after{
+    content: "70%";
+}
+.progress-line.css span::after{
+    content: "50%";
+}
+.progress-line.js span::after{
+    content: "50%";
+}
+.progress-line.c span::after{
+    content: "75%";
+}
+.progress-line.python span::after{
+    content: "60%";
+}
+.progress-line .span::before{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-radius: 1px solid transparent;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-top-color: #000;
+    top: 10px;
+    right: 0;
+    animation: showtext 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+@keyframes showtext{
+    100%{
+        opacity: 1;
+    }
+}
+
+.container3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.container3 .proffesion{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: #fff;
+    background: #000 linear-gradient(to right,transparent 50%,var(--clr)0);
+}
+.container3 .proffesion h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.0rem;
+    z-index: 1;
+}
+.container3 .proffesion h3 span{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.container3 .proffesion::before{
+    content: "";
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50%;
+}
+.container3 .proffesion::after{
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border-radius: 50%;
+    background: #000;
+}
+.container3 .proffesion::before{
+    background: var(--clr);
+    transform: rotate(calc(((var(--i) - 50) * 0.01turn)));
+}
+/* if value is less thn 50%,then */
+.container3 .proffesion .less ::before{
+    background: #000;
+    transform: rotate(calc(((var(--i) - 0) * 0.01turn)));
+}
+
+
+/*.........CONTACT SECTION...........*/
+
+#contact {
+    position: relative;
+    min-height: 95%;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #262525;
+
+}
+
+#contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+#contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #5DB9EE;
+}
+
+#contact .content p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+#contact .container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:22px ;
+
+}
+
+#contact .container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+#contact .container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+#contact .contactform{
+    width: 40%;
+    padding: 35px;
+    background: #fff;
+
+}
+
+#contact .contactform h2{
+    font-size: 30px;
+    color: #3877FF;
+    font-weight: 500;
+}
+
+#contact .contactform .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+#contact .contactform .inputBox input,
+.contactform .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactform .inputBox span{
+    position: absolute;
+    left: 0;
+    padding:5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactform .inputBox input:focus ~ span,
+.contactform .inputBox input:valid ~ span,
+.contactform .inputBox textarea:focus ~ span,
+.contactform .inputBox textarea:valid ~ span
+{
+   color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactform .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media screen (max-width:991px)
+{
+    .contact{
+        padding:50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo , .contactform
+    {
+        width:100%;
+    }
+}
